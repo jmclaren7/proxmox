@@ -1,5 +1,5 @@
 #!/bin/bash
-#Automaticy resets a VM once after it starts in order to fix some firmware issues with unusual VMs like macOS
+# Automaticy resets a VM once after it starts in order to fix some firmware issues with unusual VMs like macOS
 
 if [ $2 = "post-start" ]; then
   echo [post-start] start
