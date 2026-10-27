@@ -10,6 +10,10 @@
 #   --dry-run / -n   : don't actually call pvesh set
 #   --jobs N / -j N  : parallel pvesh set workers (default 8)
 #   Cron example: * * * * * /path/to/firewall-tags.py --loop >/dev/null
+#
+# Quick install: 
+# curl -fsSL https://raw.githubusercontent.com/jmclaren7/proxmox/refs/heads/main/firewall-tags.py -o /etc/pve/firewall-tags.py
+# echo -e "* * * * * root /etc/pve/firewall-tags.py\n" | tee /etc/cron.d/firewall-tags > /dev/null
 
 import argparse
 import os
